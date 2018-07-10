@@ -5,20 +5,21 @@
     <title>Kõik Lorem</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="icon" href="./images/favicon.ico" sizes="any">
 </head>
 <body>
 <div class="container">
-    <header class="header">
-        <a href="/" class="header__logo">Kõik Lorem</a>
-        <div class="header__center">
+    <section class="welcome">
+        <a href="/" class="welcome__logo">Kõik Lorem</a>
+        <div class="welcome__content">
             <h3 class="title">Loetav sisu lugeja</h3>
             <p>See kasutab sõnastikku üle 200 ladina sõnaga ja, koos hulga mudelitega, toodab korralikku Lorem Ipsumit.
                 Saadaval on mitmeid erinevaid Lorem Ipsumi variante, kuid enamik neist on läbi.</p>
             <a href="#" class="button">Read more</a>
         </div>
-    </header>
+    </section>
     <section class="about-us">
         <div class="about-us__center">
             <h3 class="title title-black">Kust seda saada</h3>
@@ -39,30 +40,30 @@
         </div>
     </section>
     <section class="modern">
-       <div class="modern-conteiner">
-       <header class="modern__header">
-            <h2 class="modern__title">
-                Peate seega rohkem Kindel
-            </h2>
-            <p class="modern__subtitle">
-                Mis ei näe üldsegi usutavad välja
-            </p>
-        </header>
-        <main class="slider">
-          <div class="slider__left">
-              <img src="./images/Left-Arrow.png" alt="Left Arrow" class="arrow-left">
-          </div>
-           <ul class="slider__list">
-               <li class="slider__item">
-                  <div class="slider__pic">
-                      <img src="./images/browser.jpg" alt="browser" class="slider__img">
-                  </div>
-               </li>
-           </ul>
-           <div class="slider__right">
-               <img src="./images/Right-Arrow.png" alt="Right Arrow" class="arrow-left">
-           </div>
-        </main>
+        <div class="modern-container">
+            <header class="modern__header">
+                <h2 class="modern__title">
+                    Peate seega rohkem Kindel
+                </h2>
+                <p class="modern__subtitle">
+                    Mis ei näe üldsegi usutavad välja
+                </p>
+            </header>
+            <main class="slider">
+                <div class="slider__left">
+                    <img src="./images/Left-Arrow.png" alt="Left Arrow" class="arrow-left">
+                </div>
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <div class="slider__pic">
+                            <img src="./images/browser.jpg" alt="browser" class="slider__img">
+                        </div>
+                    </li>
+                </ul>
+                <div class="slider__right">
+                    <img src="./images/Right-Arrow.png" alt="Right Arrow" class="arrow-left">
+                </div>
+            </main>
         </div>
     </section>
     <section class="mail">
@@ -72,24 +73,24 @@
             </div>
             <form action="#" class="form">
                 <div class="form-inputs">
-                   <div class="form__left">
-                    <label for="name">
-                        Name<sup>*</sup><br>
-                         <input type="text" id="name" required><br>
-                    </label>
-                   
-                    
-                    <label for="email">
-                        E-Mail<sup>*</sup><br>
-                        <input type="email" id="email" required><br>
-                    </label>
-                    
-                    
-                </div>
-                   <div class="form__right">
-                        Message<sup>*</sup><br />
+                    <div class="form__left">
+                        <label for="name">
+                            Name<sup>*</sup><br>
+                            <input type="text" id="name" required><br>
+                        </label>
+
+
+                        <label for="email">
+                            E-Mail<sup>*</sup><br>
+                            <input type="email" id="email" required><br>
+                        </label>
+
+
+                    </div>
+                    <div class="form__right">
+                        Message<sup>*</sup><br/>
                         <textarea type="text"></textarea>
-                   </div>
+                    </div>
                 </div>
                 <input type="submit" value="Send">
             </form>
