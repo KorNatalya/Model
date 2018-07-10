@@ -16,6 +16,7 @@ a {
 
 html, body {
     width: 100%;
+    background-color: rgb(229, 229, 229);
 }
 
 .title {
@@ -56,9 +57,8 @@ html, body {
 }
 
 .header__logo {
-    /*    width: 250px;*/
-    height: 45px;
-    background: url(../images/logo.png) no-repeat;
+    background: url(../images/logo1.png) no-repeat;
+    background-size: contain;
     margin-top: 50px;
     margin-left: 150px;
     float: left;
@@ -246,23 +246,24 @@ html, body {
     border: 15px solid rgba(239, 97, 83, .2);
 }
 
-.form {
+.form-inputs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 70%;
+    flex-direction: row;
+    width: 700px;
     font-size: 25px;
     font-weight: 500;
     color: #d7d7d7;
 }
 
 
-.form sup {
+.form-inputs sup {
     color: #be393b;
     font-size: 25px;
 }
 
-.form input[type='text'], input[type='email'] {
+textarea, .form input[type='text'], input[type='email'] {
     padding: 15px 20px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -270,13 +271,82 @@ html, body {
     background-color: #2f3136;
     border: 2px solid rgba(255, 255, 255, 0.52);
     color: #d7d7d7;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.form__right input{
-/*    height: 212px;*/
+.form__right textarea{
+    height: 200px;
+    width: 360px;
+    padding: 17px 20px;
+    margin-top: 20px;
+    margin-bottom: 34px;
+    border-radius: 5px;
+    background-color: #2f3136;
+    border: 2px solid rgba(255, 255, 255, 0.52);
+    color: #d7d7d7;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form input[type="submit"] {
+    padding: 15px 35px;
+    font-size: 20px;
+    background-color: #be393b;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    float: right;
 }
 
 footer {
     height: 100px;
     background-color: #2a2d33;
 }
+
+.footer__logo {
+    height: 35px;
+    background: url(../images/logo1.png) no-repeat left;
+    background-size: contain;
+    margin-top: 30px;
+    margin-left: 150px;
+    float: left;
+    font-size: 20px;
+    line-height: 2em;
+    font-weight: 400;
+    color: #efefef;
+    padding-left: 45px;
+}
+
+.footer__icons {
+   margin-right: 150px;
+}
+
+.footer__icons a{
+    float: right;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 30px 15px;
+}
+.footer__icons .linkedin, 
+.footer__icons .github {
+    border: 2px solid rgba(69, 84, 105, 0.95);
+    border-radius: 50%;
+    color: rgba(69, 84, 105, 0.95);
+    font-size: 1.3em;
+} 
+
+.footer__icons>.linkedin:hover,
+.footer__icons>.github:hover {
+    border: 2px solid rgba(100, 100, 105, 1);
+    color: rgba(100, 100, 105, 1);
+}
+
+

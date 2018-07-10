@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Landing</title>
+    <title>Kõik Lorem</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
 </head>
 <body>
 <div class="container">
     <header class="header">
-        <div class="header__logo">Kõik Lorem</div>
+        <a href="/" class="header__logo">Kõik Lorem</a>
         <div class="header__center">
             <h3 class="title">Loetav sisu lugeja</h3>
             <p>See kasutab sõnastikku üle 200 ladina sõnaga ja, koos hulga mudelitega, toodab korralikku Lorem Ipsumit.
@@ -70,29 +71,42 @@
                 <img src="./images/message.png" alt="Message" class="mail__img">
             </div>
             <form action="#" class="form">
-                <div class="form__left">
+                <div class="form-inputs">
+                   <div class="form__left">
                     <label for="name">
                         Name<sup>*</sup><br>
-                         <input type="text" id="name"><br>
+                         <input type="text" id="name" required><br>
                     </label>
                    
                     
                     <label for="email">
                         E-Mail<sup>*</sup><br>
-                        <input type="email" id="email"><br>
+                        <input type="email" id="email" required><br>
                     </label>
                     
                     
                 </div>
-                <div class="form__right">
-                    Message<sup>*</sup><br />
-                    <input type="text">
+                   <div class="form__right">
+                        Message<sup>*</sup><br />
+                        <textarea type="text"></textarea>
+                   </div>
                 </div>
+                <input type="submit" value="Send">
             </form>
         </div>
     </section>
-    <footer>
-
+    <footer class="footer">
+        <a href="/" class="header__logo footer__logo">
+            Kõik Lorem
+        </a>
+        <div class="footer__icons">
+            <a href="https://www.linkedin.com/in/kornatalya/" class="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/KorNatalya" class="github">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </footer>
 </div>
 </body>
