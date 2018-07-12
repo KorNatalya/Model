@@ -49,30 +49,108 @@ a {
     font-weight: 400;
     color: #efefef;
     padding-left: 60px;
-    width: 768px;
+    width: 1024px;
 }
 
+.welcome-wrap {
+    display: flex;
+    width: 1024px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+    margin-top: 100px;
+}
+
+.acco2 {
+    width: 230px;
+}
+
+.acco2__list{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.acco2__item{
+    margin: 2px 0;
+}
+.acco2__trigger{
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0;
+    color: white;
+    font-family: Calibri, sans-serif;
+    text-shadow: 0 2px 3px rgb(80, 80, 80);
+    text-align: left;
+    font-size: 18px;
+    background: rgba(128, 128, 128, 0.71);
+}
+.acco2__trigger:hover{
+    background: #52ad81;
+    transition: all .4s ease-out;
+    box-shadow: 1px 1px 2px rgba(15, 0, 32, 0.87);
+}
+.acco2__trigger.active{
+    background: #52ad81;
+    color: #ffffff;
+    font-size: 24px;
+    transition: all .4s ease;
+    box-shadow: 2px 2px 6px  rgba(47, 50, 52, 0.8);
+}
+
+.acco2__content{
+    height: auto;
+    display: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    background: rgba(80, 162, 120, 0.66);
+    line-height: 2em;
+}
+
+.acco2__content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 .welcome__content {
-    width: 768px;
-    clear: both;
-    float: left;
-    margin-top: 150px;
-    padding: 20px;
-    background: url(../images/Messages.png) no-repeat right rgba(69, 84, 105, 0.6);
+    width: 940px;
+    margin-top: 100px;
+    padding: 40px;
+    background: rgba(20, 40, 63, 0.6);
+    /*border-left: 15px solid rgba(255, 138, 29, 0.74);*/
+
 }
 
 .welcome__content h3 {
     line-height: 1.5em;
 }
 
+.welcome__columns {
+    width: 700px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #cfddf0;
+    margin-top: 30px;
+    column-width: 15em;
+    column-gap: 2em;
+    text-align: justify;
+}
+
 .welcome__content p {
-    width: 450px;
+    width: 640px;
     font-size: 20px;
     font-weight: 400;
     line-height: 2em;
     color: #cfddf0;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .welcome__button {
