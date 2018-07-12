@@ -10,18 +10,18 @@
     <link rel="icon" href="./images/favicon.ico" sizes="any">
 </head>
 <body>
-<div class="container">
+<div class="wrapper">
     <section class="welcome">
         <a href="/" class="welcome__logo">Kõik Lorem</a>
         <div class="welcome__content">
-            <h3 class="title">Loetav sisu lugeja</h3>
+            <h3 class="title" id="header">Loetav sisu lugeja</h3>
             <p>See kasutab sõnastikku üle 200 ladina sõnaga ja, koos hulga mudelitega, toodab korralikku Lorem Ipsumit.
                 Saadaval on mitmeid erinevaid Lorem Ipsumi variante, kuid enamik neist on läbi.</p>
-            <a href="#" class="button">Read more</a>
+            <a href="#" class="welcome__button">Read more</a>
         </div>
     </section>
     <section class="about-us">
-        <div class="about-us__center">
+        <div class="about-us__content">
             <h3 class="title title-black">Kust seda saada</h3>
             <p>See raamat on uurimus eetikateooriast, mis oli renessansi ajal väga populaarne. Lorem Ipsumi esimene
                 rida. Lorem Ipsum on tulnud Cicero 45 aastat eKr kirjutatud raamatu. Letraset'i lehtede väljalaskmisega,
@@ -40,7 +40,7 @@
         </div>
     </section>
     <section class="modern">
-        <div class="modern-container">
+        <div class="modern-wrap">
             <header class="modern__header">
                 <h2 class="modern__title">
                     Peate seega rohkem Kindel
@@ -49,7 +49,7 @@
                     Mis ei näe üldsegi usutavad välja
                 </p>
             </header>
-            <main class="slider">
+            <div class="slider">
                 <div class="slider__left">
                     <img src="./images/Left-Arrow.png" alt="Left Arrow" class="arrow-left">
                 </div>
@@ -63,11 +63,11 @@
                 <div class="slider__right">
                     <img src="./images/Right-Arrow.png" alt="Right Arrow" class="arrow-left">
                 </div>
-            </main>
+            </div>
         </div>
     </section>
     <section class="mail">
-        <div class="mail-container">
+        <div class="mail-wrap">
             <div class="mail__pic">
                 <img src="./images/message.png" alt="Message" class="mail__img">
             </div>
@@ -97,18 +97,21 @@
         </div>
     </section>
     <footer class="footer">
-        <a href="/" class="header__logo footer__logo">
-            Kõik Lorem
-        </a>
-        <div class="footer__icons">
-            <a href="https://www.linkedin.com/in/kornatalya/" class="linkedin">
-                <i class="fab fa-linkedin-in"></i>
+        <div class="footer-wrap">
+            <a href="/" class="header__logo footer__logo">
+                Kõik Lorem
             </a>
-            <a href="https://github.com/KorNatalya" class="github">
-                <i class="fab fa-github"></i>
-            </a>
+            <div class="footer__icons">
+                <a href="https://www.linkedin.com/in/kornatalya/" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/KorNatalya" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </div>
 </body>
 </html>

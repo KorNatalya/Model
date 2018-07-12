@@ -24,21 +24,7 @@ a {
     color: rgba(69, 84, 105, 0.95);
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #52ad81;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-}
-
-.container {
+.wrapper {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -89,22 +75,42 @@ a {
     margin-bottom: 50px;
 }
 
+.welcome__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #50a278;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.welcome__button:hover {
+    background-color: #3da25e;
+    box-shadow: 2px 2px 5px #2d3136;
+}
+
 .about-us {
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, rgba(69, 84, 105, 0.60) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(69, 84, 105, 0.60) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-.about-us__center {
+.about-us__content {
     width: 800px;
     height: 220px;
     background: url(../images/doc_min.png) no-repeat;
     padding-left: 200px;
 }
 
-.about-us__center p {
+.about-us__content p {
     color: rgba(69, 84, 105, 0.95);
     font-weight: 400;
     line-height: 1.8em;
@@ -113,7 +119,6 @@ a {
 }
 
 .about-us__icons {
-    /*    float: left;*/
     width: 100px;
 }
 
@@ -124,6 +129,12 @@ a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.about-us__icons a:hover {
+    background-color: #3da25e;
+    box-shadow: 2px 2px 5px #2d3136;
 }
 
 .about-us__icons .pencil {
@@ -135,7 +146,6 @@ a {
 }
 
 .about-us__icons .linkedin {
-    /*border: 2px solid #67bf95;*/
     border-radius: 50%;
     color: white;
     margin-bottom: 20px;
@@ -155,7 +165,7 @@ a {
     background-color: #52ad81;
 }
 
-.modern-container {
+.modern-wrap {
     height: 100%;
     min-height: 630px;
     display: flex;
@@ -198,11 +208,21 @@ a {
     justify-content: center;
     font-size: 1.4em;
     cursor: pointer;
+    transition: .3s ease-in-out;
 }
 
 .slider__left:hover,
 .slider__right:hover {
-    background-color: #67bf95;
+    background-color: #3da25e;
+    box-shadow: 2px 2px 5px #2d3136;
+}
+
+.slider__left:hover {
+    padding-right: 5px;
+}
+
+.slider__right:hover {
+    padding-left: 5px;
 }
 
 .slider__pic {
@@ -218,13 +238,12 @@ a {
 }
 
 .mail {
-    height: 450px;
     background-color: #2d3136;
     height: 100vh;
     min-height: 630px;
 }
 
-.mail-container {
+.mail-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,6 +317,11 @@ textarea, .form input[type='text'], input[type='email'] {
     border: none;
     cursor: pointer;
     float: right;
+    transition: .3s ease-in-out;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #992e2f;
 }
 
 footer {
@@ -305,22 +329,24 @@ footer {
     background-color: #2a2d33;
 }
 
+.footer-wrap {
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer__logo {
     height: 35px;
     background: url(../images/logo1.png) no-repeat left;
     background-size: contain;
-    margin-top: 30px;
-    margin-left: 150px;
-    float: left;
     font-size: 20px;
-    line-height: 2em;
+    line-height: 1.7em;
     font-weight: 400;
     color: #efefef;
     padding-left: 45px;
-}
-
-.footer__icons {
-    margin-right: 150px;
+    transition: border;
 }
 
 .footer__icons a {
@@ -336,9 +362,9 @@ footer {
 
 .footer__icons .linkedin,
 .footer__icons .github {
-    border: 2px solid rgba(69, 84, 105, 0.95);
+    border: 2px solid rgba(76, 93, 114, 0.95);
     border-radius: 50%;
-    color: rgba(69, 84, 105, 0.95);
+    color: rgba(76, 93, 114, 0.95);
     font-size: 1.3em;
 }
 
