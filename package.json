@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "lightgallery.js": "^1.0.3",
     "siema": "^1.5.1"
   }
 }
