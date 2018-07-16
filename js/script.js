@@ -9,4 +9,15 @@ $(document).ready(function() {
       $(this).removeClass('active').next('ul').slideUp();	//скрываем данный пункт
     }
   });
+
+  // SLIDER
+
+  const mySiema = new Siema({
+    loop: true,
+  });
+  document.querySelector('.slider__left').
+      addEventListener('click', () => mySiema.prev());
+  document.querySelector('.slider__right').
+      addEventListener('click', () => mySiema.next());
 });
+
